@@ -12,6 +12,7 @@ import { numbers } from '../../../data'
 export default function Number() {
   const [currentNumber, setCurrentNumber] = useState(numbers);
   return (
+    
     <div>{currentNumber.map((number, index) =>(
       <NumberButton key={index} number={number} />
     ))}</div>
